@@ -6,7 +6,7 @@ import axios from "axios";
 export default function Projects({gallary,categories}) {
 	const [data,setData] = useState([]);
 	const filterImg = async (filterTag) => {
-		  await axios.get("https://advanced-velocity.herokuapp.com/projects?category.name="+filterTag).then((res)=>{
+		  await axios.get("https://advanced-velocity-2022.herokuapp.com/projects?category.name="+filterTag).then((res)=>{
 			setData(res.data); 
 		  })
 	  };
@@ -55,10 +55,10 @@ export default function Projects({gallary,categories}) {
 export async function getStaticProps(){
 	let data = [];
 	let categories = [];
-	await axios.get("https://advanced-velocity.herokuapp.com/projects").then((res)=>{
+	await axios.get("https://advanced-velocity-2022.herokuapp.com/projects").then((res)=>{
 		data = res.data;
 	});
-	await axios.get("https://advanced-velocity.herokuapp.com/categories").then((res)=>{
+	await axios.get("https://advanced-velocity-2022.herokuapp.com/categories").then((res)=>{
 		categories = res.data;
 	});
 	return {

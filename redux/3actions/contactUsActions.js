@@ -21,7 +21,7 @@ export const onContacting = (e, contactForm) => {
   e.preventDefault();
   return (dispatch) => {
     dispatch(onStartContacting());
-    fetch("https://advanced-velocity.herokuapp.com/contacts", {
+    fetch("https://advanced-velocity-2022.herokuapp.com/contacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

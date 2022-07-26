@@ -11,7 +11,7 @@ const onStartFetchingLinks = () => {
 export const onFetchingLinks = () => {
   return (dispatch) => {
     dispatch(onStartFetchingLinks());
-    fetch("https://advanced-velocity.herokuapp.com/social-media")
+    fetch("https://advanced-velocity-2022.herokuapp.com/social-media")
       .then((res) => res.json())
       .then((resData) => {
         console.log(17, resData);

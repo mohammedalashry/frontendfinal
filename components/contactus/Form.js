@@ -26,7 +26,7 @@ export default function Form({data}) {
 
    if(firstName !== "" && email !== ""&& phoneNumber !== "" && lastName !== ""){
      if(email.match(validRegex)){
-   await axios.post("https://advanced-velocity.herokuapp.com/contacts",requestData).then((db)=>{
+   await axios.post("https://advanced-velocity-2022.herokuapp.com/contacts",requestData).then((db)=>{
      setCompany("");
      setFirstName("");
      setLastName("");

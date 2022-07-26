@@ -30,7 +30,7 @@ export default function Project({gallary}) {
 }
 export async function getServerSideProps({params}){
    let gallary = [];
-   await axios.get(`https://advanced-velocity.herokuapp.com/projects/${params.projectId}`).then((res)=>{
+   await axios.get(`https://advanced-velocity-2022.herokuapp.com/projects/${params.projectId}`).then((res)=>{
        gallary = res.data;  
    });
  return{

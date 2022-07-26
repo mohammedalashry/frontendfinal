@@ -15,7 +15,7 @@ const onStartFetchingProjects = () => {
 export const onFetchingProjects = () => {
   return (dispatch) => {
     dispatch(onStartFetchingProjects());
-    fetch("https://advanced-velocity.herokuapp.com/projects")
+    fetch("https://advanced-velocity-2022.herokuapp.com/projects")
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
@@ -40,7 +40,7 @@ const onStartFetchingSpecifcProject = () => {
 export const onFetchingSpecificProject = (projectId) => {
   return (dispatch) => {
     dispatch(onStartFetchingSpecifcProject());
-    fetch(`https://advanced-velocity.herokuapp.com/projects/${projectId}`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/projects/${projectId}`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(46, resData);

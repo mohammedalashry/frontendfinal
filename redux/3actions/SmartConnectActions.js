@@ -10,7 +10,7 @@ export const onStartFetchingSmartConnect = () => {
 export const onFetchingSmartConnect = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSmartConnect());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/smart-connect`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/smart-connect`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);

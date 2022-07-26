@@ -18,7 +18,7 @@ export const onStartFetchingRequestDemo = () => {
 export const onFetchingRequestDemo = () => {
   return (dispatch) => {
     dispatch(onStartFetchingRequestDemo());
-    fetch(`https://advanced-velocity.herokuapp.com/request-demo`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/request-demo`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
@@ -43,7 +43,7 @@ export const onStartFetchingRequestDemoCategories = () => {
 export const onFetchingRequestDemoCategories = () => {
   return (dispatch) => {
     dispatch(onStartFetchingRequestDemoCategories());
-    fetch(`https://advanced-velocity.herokuapp.com/categories`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/categories`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
@@ -92,7 +92,7 @@ export const onSendingRequestDemo = (e, RDForm) => {
   e.preventDefault();
   return (dispatch) => {
     dispatch(onStartSendingRequestDemo());
-    fetch(`https://advanced-velocity.herokuapp.com/request-demos`, {
+    fetch(`https://advanced-velocity-2022.herokuapp.com/request-demos`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -26,11 +26,11 @@ export async function getStaticProps(){
   let data = [];
   let dataPartner = [];
 
-  await axios.get("https://advanced-velocity.herokuapp.com/posts/landing-page").then((response) => {
+  await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/landing-page").then((response) => {
     dataPartner = response.data;
   });
 
-   await axios.get("https://advanced-velocity.herokuapp.com/posts/about-us").then((response) => {
+   await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/about-us").then((response) => {
     data = response.data;
   });
  

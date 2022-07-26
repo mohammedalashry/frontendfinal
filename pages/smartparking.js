@@ -11,7 +11,7 @@ export default function Smartparking({data}) {
 }
 export async function getStaticProps(){
   let data = [];
-   await axios.get("https://advanced-velocity.herokuapp.com/posts/smart-parking").then((res)=>{
+   await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/smart-parking").then((res)=>{
       data = res.data;
    });
   return{

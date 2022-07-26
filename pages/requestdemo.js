@@ -373,12 +373,12 @@ export async function getStaticProps() {
   let catogrisTypes = [];
 
   await axios
-    .get("https://advanced-velocity.herokuapp.com/categories")
+    .get("https://advanced-velocity-2022.herokuapp.com/categories")
     .then((response) => {
       data = response.data;
     });
   await axios
-    .get("https://advanced-velocity.herokuapp.com/posts/request-demo")
+    .get("https://advanced-velocity-2022.herokuapp.com/posts/request-demo")
     .then((response) => {
       catogrisTypes = response.data;
     });

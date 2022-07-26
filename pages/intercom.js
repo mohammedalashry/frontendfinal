@@ -11,7 +11,7 @@ export default function Intercom({data}) {
 }
 export async function getStaticProps(){
    let data = [];
-   await axios.get("https://advanced-velocity.herokuapp.com/posts/intercom").then((res)=>{
+   await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/intercom").then((res)=>{
         data = res.data
    });
   return{

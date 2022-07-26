@@ -35,7 +35,7 @@ export async function getStaticProps(){
 
 
 
-   await axios.get("https://advanced-velocity.herokuapp.com/posts/landing-page").then((response) => {
+   await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/landing-page").then((response) => {
     data = response.data;
   });
  

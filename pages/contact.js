@@ -11,7 +11,7 @@ export default function Contact({data}) {
 }
 export async function getStaticProps(){
    let data = [];
-   await axios.get("https://advanced-velocity.herokuapp.com/social-media").then((res)=>{
+   await axios.get("https://advanced-velocity-2022.herokuapp.com/social-media").then((res)=>{
        data = res.data;
    });
 

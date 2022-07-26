@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import useFetchFooter from "./Hooks/FooterHooks";
 export default function Footer() {
-  const {data} = useFetchFooter("https://advanced-velocity.herokuapp.com/social-media");
+  const {data} = useFetchFooter("https://advanced-velocity-2022.herokuapp.com/social-media");
   return (
     <>
       <div className={`container-fluid ${styles.container}`}>

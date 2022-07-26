@@ -11,7 +11,7 @@ export const onFetchingVisitorMS = () => {
   return (dispatch) => {
     dispatch(onStartFetchingVisitorMS());
     fetch(
-      `https://advanced-velocity.herokuapp.com/posts/visitor-management-system`
+      `https://advanced-velocity-2022.herokuapp.com/posts/visitor-management-system`
     )
       .then((res) => res.json())
       .then((resData) => {

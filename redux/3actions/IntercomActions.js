@@ -10,7 +10,7 @@ export const onStartFetchingIntercom = () => {
 export const onFetchingIntercom = () => {
   return (dispatch) => {
     dispatch(onStartFetchingIntercom());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/intercom`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/intercom`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);

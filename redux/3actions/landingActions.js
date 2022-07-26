@@ -29,7 +29,7 @@ export const onStartFetchingSection1 = () => {
 export const onFetchingSection1 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection1());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/1`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/1`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -58,7 +58,7 @@ export const onStartFetchingSection2 = () => {
 export const onFetchingSection2 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection2());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/2`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/2`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -87,7 +87,7 @@ export const onStartFetchingSection3 = () => {
 export const onFetchingSection3 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection3());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/3`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/3`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -116,7 +116,7 @@ export const onStartFetchingSection4 = () => {
 export const onFetchingSection4 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection4());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/4`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/4`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -145,7 +145,7 @@ export const onStartFetchingSection5 = () => {
 export const onFetchingSection5 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection5());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/5`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/5`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -174,7 +174,7 @@ export const onStartFetchingSection6 = () => {
 export const onFetchingSection6 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection6());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/6`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/6`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -203,7 +203,7 @@ export const onStartFetchingSection7 = () => {
 export const onFetchingSection7 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection7());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/landing-page/7`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/landing-page/7`)
       .then((res) => {
         console.log(res);
         return res.json();

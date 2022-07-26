@@ -10,7 +10,7 @@ export const onStartFetchingSupport = () => {
 export const onFetchingSupport = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSupport());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/support`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/support`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);

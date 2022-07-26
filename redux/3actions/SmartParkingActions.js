@@ -10,7 +10,7 @@ export const onStartFetchingSmartParking = () => {
 export const onFetchingSmartParking = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSmartParking());
-    fetch(`https://advanced-velocity.herokuapp.com/posts/smart-parking`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/smart-parking`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
