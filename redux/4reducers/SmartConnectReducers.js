@@ -4,7 +4,7 @@ import {
   FINISH_FETCHING_SMART_CONNECT,
 } from "../1actionTypes/SmartConnectAT";
 
-import { SmartConnectIS } from "../2initialState/SmartConnectIS.JS";
+import { SmartConnectIS } from "../2initialState/SmartConnectIS";
 
 const startFetchingSmartConnect = (state, action) => {
   return updateObject(state, { loadingSmartConnect: true });

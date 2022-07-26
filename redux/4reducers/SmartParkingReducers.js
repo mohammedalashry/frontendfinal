@@ -4,7 +4,7 @@ import {
   FINISH_FETCHING_SMART_PARKING,
 } from "../1actionTypes/SmartParkingAT";
 
-import { SmartParkingIS } from "../2initialState/SmartParkingIS.JS";
+import { SmartParkingIS } from "../2initialState/SmartParkingIS";
 
 const startFetchingSmartParking = (state, action) => {
   return updateObject(state, { loadingSmartParking: true });

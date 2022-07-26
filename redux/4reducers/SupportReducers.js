@@ -4,7 +4,7 @@ import {
   FINISH_FETCHING_SUPPORT,
 } from "../1actionTypes/SupportAT";
 
-import { SupportInitialState } from "../2initialState/SupportIS.JS";
+import { SupportInitialState } from "../2initialState/SupportIS";
 
 // =================================================================
 
