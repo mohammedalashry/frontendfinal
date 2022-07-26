@@ -1,0 +1,113 @@
+.container{
+    padding: 0px;
+    font-family:sans-serif;
+    position: relative;
+  }
+  .containerSectionOne{
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    position: relative;
+    min-height: 300px;
+    min-width: 320px;
+  }
+  .imgSectionOne{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    /* min-height: 400px;
+    min-width: 320px; */
+  }
+  
+  
+  .textSectionOne{
+    position: absolute;
+    top: 50%;
+    /* padding-top: 50px; */
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 27%;
+    height: auto;
+  }
+  
+  
+  .title{
+    font-size: 25px;
+    font-weight: 600; 
+    color: #2F3131;
+    width: 280px;
+    margin-top: 20px;
+  }
+  
+  .description{
+    font-size: 15px;
+    font-weight: 200;
+    color: #7F7F7F;
+    padding-top: 10px;
+    width: 280px;
+  }
+
+  .button {
+    color: #ff7500;
+    background-color: transparent;
+    margin: 19px 0;
+    padding: 5px 8px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #ff7500;
+  }
+  
+  .button:hover {
+    background-color: #ff7500 !important;
+    border-color: #fff;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .containerSectionOne{
+        height: 600px;
+    }
+  } 
+  
+  @media only screen and (max-width: 768px) {
+    .containerSectionOne{
+        height: 400px;
+    }
+    .title{
+        font-size: 23px;
+        width: 280px;
+      }
+      .textSectionOne{
+        top:33%;
+      }
+      .description{
+        font-size: 15px;
+        width: 250px;
+      }
+  } 
+    
+  @media only screen and (max-width: 400px) {
+    .containerSectionOne{
+        height: 350px;
+    }
+    .textSectionOne{
+        left: 23%;
+    }
+    .title{
+        font-size: 22px;
+        width: 280px;
+      }
+      
+      .description{
+        font-size: 14px;
+        width: 200px;
+      }
+  }

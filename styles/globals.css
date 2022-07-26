@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.slick-next {
+  position: absolute;
+  right: 0 !important;
+  top: 50%;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 0 !important;
+  top: 50%;
+}
+
+.slick-slide img
+{
+    display: inline;
+}

@@ -1,0 +1,39 @@
+.img{
+    width: 100%;
+    margin-top: 30px;
+    height: 90%;
+}
+
+.div{
+    width: 75%;
+    left: 100px;
+    margin-top: 20px;
+}
+
+.title{
+    color: #4A4A4A;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 80px;
+    font-family:sans-serif;
+}
+
+.description{
+    color: #666666;
+    font-size: 18px;
+    font-family:sans-serif;
+}
+
+.button{
+    color:  #FF7500;
+    background-color: #fff !important;
+    margin:15px 0;
+    padding: 5px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #FF7500;
+}

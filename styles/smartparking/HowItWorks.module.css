@@ -1,0 +1,48 @@
+.container{
+    font-family:sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.div{
+    width: 75%;
+    margin-top: 30px;
+
+}
+.containerImages{
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    width: 90%;
+    height: 90%;
+}
+
+
+.title{
+    color: #2F3131;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:sans-serif;
+    padding-bottom: 20px;
+}
+
+.description{
+    color: #4A4A4A;
+    font-size: 17px;
+    font-family:sans-serif;
+}
+
+.button{
+    color:  #ffff;
+    background-color: #FF7500 !important;
+    margin:19px 0;
+    padding: 5px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #FF7500;
+}

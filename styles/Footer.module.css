@@ -1,0 +1,80 @@
+.container{
+    background-color: #2F3131;
+    /* font-family:sans-serif; */
+}
+.info{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 13px;
+}   
+.address{
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.divText{
+    color: #ffffff;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.divText p{
+     cursor: pointer;
+}
+.links {
+    color: #fff!important;
+    text-transform: uppercase;
+    /* margin-left: 12px; */
+    padding: 0 50px;
+    margin: 0 23px; 
+    font-weight: 500;
+    font-size: 16px;
+}
+.colLinks {
+    margin-left: 20px;
+}
+
+.button{
+    color:  #ffffff;
+    background-color:  #2F3131 !important;
+    margin:19px 0;
+    /* padding: 10px 50px; */
+    padding: 5px 5px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #ffffff;
+    
+}
+.button:hover {
+  color: #FF7500;
+  background-color: #2F3131 !important;
+  border-color: #FF7500;
+  margin:19px 0;
+  padding: 5px 5px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #FF7500;
+}  
+
+.iconCard{
+    width: 22px;
+    height: 22px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    .links {
+        margin: 0px 0px; 
+    }
+ } 

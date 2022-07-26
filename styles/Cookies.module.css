@@ -1,0 +1,30 @@
+.bg{
+    background-color: #FF7F0B;
+}
+
+.div{
+    padding-top: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2F3131;
+}
+
+.link{
+    color: #ffffff;
+}
+.button{
+    color:  #ffffff;
+    background-color:  #FF7500 !important;
+    margin:19px 0;
+    /* padding: 10px 50px; */
+    padding: 5px 5px;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #ffffff;
+
+}

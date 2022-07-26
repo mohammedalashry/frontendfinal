@@ -1,0 +1,23 @@
+.container {
+   /* height: 420px; */
+   text-align: center;
+   /* border: 5px solid red; */
+  }
+
+.para {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  font-size: 23px;
+  color: #464646;
+  font-weight: 600;
+  font-family:sans-serif;
+  /* margin-left: 300px;
+  margin-right: 300px; */
+}  
+
+@media only screen and (max-width: 600px) {
+  .para {
+    font-size: 20px;
+    font-weight: 600;
+  }  
+} 
