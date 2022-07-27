@@ -1,7 +1,7 @@
 import styles from "../../styles/support/NeedHelp.module.css";
 import { useRouter } from "next/router";
 
-export default function NeedHelp({data}) {
+export default function NeedHelp({ data }) {
   const router = useRouter();
   const handleClick = () => {
     router.push("/contact");
@@ -16,17 +16,33 @@ export default function NeedHelp({data}) {
                 <tbody>
                   <tr>
                     <td className={styles.td}>
-                      <img className={styles.img2} src={data?.image[0].url} alt={data.title} />
-                      <img className={styles.img3} src={data?.image[2].url}  alt={data.title}/>
+                      <img
+                        className={styles.img2}
+                        src={data?.image[0]?.url}
+                        alt={data.title}
+                      />
+                      <img
+                        className={styles.img3}
+                        src={data?.image[2]?.url}
+                        alt={data.title}
+                      />
                     </td>
                     <td className={styles.td}></td>
                   </tr>
                   <tr>
                     <td className={styles.td}>
-                      <img className={styles.img1} src={data?.image[1].url} alt={data.title} />
+                      <img
+                        className={styles.img1}
+                        src={data?.image[1]?.url}
+                        alt={data.title}
+                      />
                     </td>
                     <td className={styles.td}>
-                      <img className={styles.img4} src={data?.image[3].url} alt={data.title}/>
+                      <img
+                        className={styles.img4}
+                        src={data?.image[3]?.url}
+                        alt={data.title}
+                      />
                     </td>
                   </tr>
                 </tbody>
@@ -57,10 +73,10 @@ export default function NeedHelp({data}) {
           <div className="col-12 col-md-5">
             <div className={styles.div}>
               <p className={styles.title}>{data.title}</p>
-              <p className={styles.description}>
-                {data.description}
-              </p>
-              <button onClick={handleClick} className={styles.button}>CONTACT US</button>
+              <p className={styles.description}>{data.description}</p>
+              <button onClick={handleClick} className={styles.button}>
+                CONTACT US
+              </button>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import styles from "../../styles/about/AboutUs.module.css";
-import Image from "next/image"
-export default function AboutUs({data}) {
-  let filterPosition =data.filter((db)=> db.position == 1);
+import Image from "next/image";
+export default function AboutUs({ data }) {
+  let filterPosition = data.filter((db) => db.position == 1);
 
   return (
     <>
@@ -9,8 +9,7 @@ export default function AboutUs({data}) {
         <div className={` ${styles.containerSectionOne}`}>
           <img
             className={styles.imgSectionOne}
-            src={filterPosition[0].image[0].url}
-           
+            src={filterPosition[0]?.image[0]?.url}
             alt={filterPosition[0].title}
           />
         </div>
@@ -18,7 +17,7 @@ export default function AboutUs({data}) {
         <div className={styles.textSectionOne}>
           <p className={styles.title}>{filterPosition[0].title}</p>
           <div className={styles.description}>
-           {filterPosition[0].description}
+            {filterPosition[0].description}
           </div>
         </div>
       </div>
