@@ -28,9 +28,9 @@ export default function Projects({gallary,categories}) {
 
 		{(data.length >0? data:gallary).map((db,i)=>(
 			<Link href={"/projects/"+db.id} key={db._id} passHref>
-  <div className={styles.itemWrapper} key={db._id} style={{height:db.image.height >= 500 ?db.image.height/2:db.image.height}}>
+  <div className={styles.itemWrapper} key={db._id} style={{height:db.image?.height >= 500 ?db.image?.height/2:db.image?.height}}>
 	<div className={styles.imgContainer}>  
-    <Image className={`${styles.grid_item} ${styles.grid_item_1}`} layout='fill' src={db.image.url} alt=''/>
+    <Image className={`${styles.grid_item} ${styles.grid_item_1}`} layout='fill' src={db.image?.url} alt=''/>
     <p className={styles.desc}>{db.description}</p>
 	</div>
 	<h4 className={styles.title}>{db.title}</h4>

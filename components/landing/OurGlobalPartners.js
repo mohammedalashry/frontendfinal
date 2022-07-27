@@ -68,9 +68,9 @@ export default function OurGlobalPartners({data}) {
           <div className={styles.logo} key={db._id}>
             <Image
               className={styles.logoPartner}
-              src={db.url}
-              width={db.width}
-              height={db.height}
+              src={db?.url}
+              width={db?.width}
+              height={db?.height}
               alt="Card image cap"
             />
           </div>

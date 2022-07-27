@@ -9,9 +9,9 @@ export default function Project({gallary}) {
           <div className={`col-10 col-sm-12 col-md-6 ${styles.wrapImg}`}>
             <Image
               className={styles.img}
-              src={gallary.image.url}
-              width={gallary.image.width}
-              height={gallary.image.height}
+              src={gallary?.image?.url}
+              width={gallary?.image?.width}
+              height={gallary?.image?.height}
 
               alt="Card image cap"
             />
