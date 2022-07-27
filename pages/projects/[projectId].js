@@ -3,7 +3,7 @@ import styles from "../../styles/projects/Project.module.css";
 import Image from "next/image";
 export default function Project({gallary}) {
   return (
-    <>
+    <> 
       <div className="container">
         <div className={`row ${styles.wrapContainer}`}>
           <div className={`col-10 col-sm-12 col-md-6 ${styles.wrapImg}`}>
