@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {BASE_URL} from "../variable";
 import styles from "../styles/Requestdemo.module.css";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
@@ -373,12 +374,12 @@ export async function getStaticProps() {
   let catogrisTypes = [];
 
   await axios
-    .get("https://advanced-velocity-2022.herokuapp.com/categories")
+    .get(`${BASE_URL}/categories`)
     .then((response) => {
       data = response.data;
     });
   await axios
-    .get("https://advanced-velocity-2022.herokuapp.com/posts/request-demo")
+    .get(`${BASE_URL}/request-demos`)
     .then((response) => {
       catogrisTypes = response.data;
     });

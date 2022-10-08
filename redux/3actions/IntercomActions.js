@@ -1,3 +1,5 @@
+import {BASE_URL} from "../../variable";
+
 import {
   START_FETCHING_INTERCOM,
   FINISH_FETCHING_INTERCOM,
@@ -10,7 +12,7 @@ export const onStartFetchingIntercom = () => {
 export const onFetchingIntercom = () => {
   return (dispatch) => {
     dispatch(onStartFetchingIntercom());
-    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/intercom`)
+    fetch(`${BASE_URL}/posts/intercom`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
