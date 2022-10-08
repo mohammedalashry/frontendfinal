@@ -16,6 +16,8 @@ import { applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
+import {BASE_URL} from "../variable";
+
 
 const rootReducer = combineReducers({
   landing: landingReducer,

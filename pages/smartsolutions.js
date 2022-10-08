@@ -1,5 +1,6 @@
 
 import Cards from "../components/smartsolutions/Cards";
+import {BASE_URL} from "../variable";
 import CommunityApp from "../components/smartsolutions/CommunityApp";
 import ImageWrapper from "../components/smartsolutions/Image";
 import Info from "../components/smartsolutions/Info";
@@ -22,7 +23,7 @@ export default function SmartSolutions({data}) {
 }
 export async function getStaticProps(){
   let data = [];
-  await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/smart-solutions").then((res)=>{
+  await axios.get(`${BASE_URL}/posts/smart-solutions`).then((res)=>{
     data = res.data;
   });
   return {

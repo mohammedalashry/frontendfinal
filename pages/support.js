@@ -1,5 +1,7 @@
 import Info from "../components/support/Info";
 import NeedHelp from "../components/support/NeedHelp";
+import {BASE_URL} from "../variable";
+
 import axios from "axios"
 export default function Support({data}) {
   return (
@@ -11,7 +13,7 @@ export default function Support({data}) {
 }
 export async function getStaticProps(){
   let data = [];
-  await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/support").then((res)=>{
+  await axios.get(`${BASE_URL}/posts/support`).then((res)=>{
      data = res.data;
   });
   

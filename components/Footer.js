@@ -1,9 +1,10 @@
 import styles from "../styles/Footer.module.css";
+import {BASE_URL} from "../variable";
 import Image from "next/image";
 import Link from "next/link";
 import useFetchFooter from "./Hooks/FooterHooks";
 export default function Footer() {
-  const {data} = useFetchFooter("https://advanced-velocity-2022.herokuapp.com/social-media");
+  const {data} = useFetchFooter(`${BASE_URL}/social-media`);
   return (
     <>
       <div className={`container-fluid ${styles.container}`}>

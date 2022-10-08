@@ -6,6 +6,8 @@ import WhatOurPartnersSay from '../components/aboutus/WhatOurPartnersSay'
 import OurGlobalPartners from '../components/landing/OurGlobalPartners'
 import SliderComp from '../components/aboutus/SliderComp'
 import axios from "axios";
+import {BASE_URL} from "../variable";
+
 
 
 export default function About({data,dataPartner}) {
@@ -26,11 +28,11 @@ export async function getStaticProps(){
   let data = [];
   let dataPartner = [];
 
-  await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/landing-page").then((response) => {
+  await axios.get(`${BASE_URL}/posts/landing-page`).then((response) => {
     dataPartner = response.data;
   });
 
-   await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/about-us").then((response) => {
+   await axios.get(`${BASE_URL}/posts/about-us`).then((response) => {
     data = response.data;
   });
  

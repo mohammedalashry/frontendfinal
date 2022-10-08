@@ -1,6 +1,8 @@
 import axios from "axios";
 import styles from "../../styles/projects/Project.module.css";
 import Image from "next/image";
+import {BASE_URL} from "../../variable";
+
 export default function Project({gallary}) {
   return (
     <> 
@@ -30,7 +32,7 @@ export default function Project({gallary}) {
 }
 export async function getServerSideProps({params}){
    let gallary = [];
-   await axios.get(`https://advanced-velocity-2022.herokuapp.com/projects/${params.projectId}`).then((res)=>{
+   await axios.get(`${BASE_URL}/projects/${params.projectId}`).then((res)=>{
        gallary = res.data;  
    });
  return{

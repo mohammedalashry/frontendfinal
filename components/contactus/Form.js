@@ -1,5 +1,7 @@
 import {useState} from "react";
 import styles from "../../styles/contactus/Form.module.css";
+import {BASE_URL} from "../../variable";
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
@@ -26,7 +28,7 @@ export default function Form({data}) {
 
    if(firstName !== "" && email !== ""&& phoneNumber !== "" && lastName !== ""){
      if(email.match(validRegex)){
-   await axios.post("https://advanced-velocity-2022.herokuapp.com/contacts",requestData).then((db)=>{
+   await axios.post(`${BASE_URL}/contacts`,requestData).then((db)=>{
      setCompany("");
      setFirstName("");
      setLastName("");

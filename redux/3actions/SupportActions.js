@@ -2,6 +2,8 @@ import {
   START_FETCHING_SUPPORT,
   FINISH_FETCHING_SUPPORT,
 } from "../1actionTypes/SupportAT";
+import {BASE_URL} from "../../variable";
+
 
 export const onStartFetchingSupport = () => {
   return { type: START_FETCHING_SUPPORT };
@@ -10,7 +12,7 @@ export const onStartFetchingSupport = () => {
 export const onFetchingSupport = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSupport());
-    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/support`)
+    fetch(`${BASE_URL}/posts/support`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);

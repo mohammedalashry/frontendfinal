@@ -1,3 +1,5 @@
+import {BASE_URL} from "../../variable";
+
 import { toast } from "react-toastify";
 import {
   FINISH_FETCHING_ABOUT_SECTION_1,
@@ -14,7 +16,7 @@ const onStartFetchingSection1 = () => {
 export const onFetchingAboutSection1 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection1());
-    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/about-us/1`)
+    fetch(`${BASE_URL}/posts/about-us/1`)
       .then((res) => {
         console.log(res);
         return res.json();
@@ -43,7 +45,7 @@ const onStartFetchingSection2 = () => {
 export const onFetchingAboutSection2 = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSection2());
-    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/about-us/2`)
+    fetch(`${BASE_URL}/posts/about-us/2`)
       .then((res) => {
         console.log(res);
         return res.json();
