@@ -1,5 +1,3 @@
-import {BASE_URL} from "../../variable";
-
 import {
   START_FETCHING_SMART_PARKING,
   FINISH_FETCHING_SMART_PARKING,
@@ -12,7 +10,7 @@ export const onStartFetchingSmartParking = () => {
 export const onFetchingSmartParking = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSmartParking());
-    fetch(`${BASE_URL}/posts/smart-parking`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/smart-parking`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);

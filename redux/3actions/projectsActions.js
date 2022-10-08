@@ -1,5 +1,3 @@
-import {BASE_URL} from "../../variable";
-
 import { toast } from "react-toastify";
 import {
   FINISH_FETCHING_ALL_PORJECTS,
@@ -17,7 +15,7 @@ const onStartFetchingProjects = () => {
 export const onFetchingProjects = () => {
   return (dispatch) => {
     dispatch(onStartFetchingProjects());
-    fetch(`${BASE_URL}/projects`)
+    fetch("https://advanced-velocity-2022.herokuapp.com/projects")
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
@@ -42,7 +40,7 @@ const onStartFetchingSpecifcProject = () => {
 export const onFetchingSpecificProject = (projectId) => {
   return (dispatch) => {
     dispatch(onStartFetchingSpecifcProject());
-    fetch(`${BASE_URL}/projects/${projectId}`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/projects/${projectId}`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(46, resData);

@@ -1,8 +1,6 @@
 import Info from '../components/visitorManagementSystems/Info'
 import SendAVisitorAnInvite from '../components/visitorManagementSystems/SendAVisitorAnInvite'
 import axios from "axios";
-import {BASE_URL} from "../variable";
-
 export default function index({data}) {
   return (
     <>
@@ -14,7 +12,7 @@ export default function index({data}) {
 
 export async function getStaticProps(){
   let data = [];
-  await axios.get(`${BASE_URL}/posts/visitor-management-system`).then((res)=>{
+  await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/visitor-management-system").then((res)=>{
      data = res.data;
   });
   return {

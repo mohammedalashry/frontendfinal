@@ -1,7 +1,6 @@
 import Connect from "../components/smartconnect/Connect";
 import StayConnected from "../components/smartconnect/StayConnected";
-import {BASE_URL} from "../variable";
-import axios from "axios";
+import axios from "axios"
 export default function Smartconnect({data}) {
   return (
     <>
@@ -12,7 +11,7 @@ export default function Smartconnect({data}) {
 }
 export async function getStaticProps(){
   let data = [];
-   await axios.get(`${BASE_URL}/posts/smart-connect`).then((res)=>{
+   await axios.get("https://advanced-velocity-2022.herokuapp.com/posts/smart-connect").then((res)=>{
       data = res.data;
    });
   return{

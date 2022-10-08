@@ -1,6 +1,4 @@
 import { toast } from "react-toastify";
-import {BASE_URL} from "../../variable";
-
 import {
   FINISH_FETCHING_LINKS,
   START_FETCHING_LINKS,
@@ -13,7 +11,7 @@ const onStartFetchingLinks = () => {
 export const onFetchingLinks = () => {
   return (dispatch) => {
     dispatch(onStartFetchingLinks());
-    fetch(`${BASE_URL}/social-media`)
+    fetch("https://advanced-velocity-2022.herokuapp.com/social-media")
       .then((res) => res.json())
       .then((resData) => {
         console.log(17, resData);

@@ -1,5 +1,3 @@
-import {BASE_URL} from "../../variable";
-
 import { toast } from "react-toastify";
 import {
   CHANGE_CONTACT_US_INPUT,
@@ -23,7 +21,7 @@ export const onContacting = (e, contactForm) => {
   e.preventDefault();
   return (dispatch) => {
     dispatch(onStartContacting());
-    fetch(`${BASE_URL}/contacts`, {
+    fetch("https://advanced-velocity-2022.herokuapp.com/contacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

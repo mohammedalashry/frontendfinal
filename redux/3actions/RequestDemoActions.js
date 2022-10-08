@@ -1,5 +1,3 @@
-import {BASE_URL} from "../../variable";
-
 import { toast } from "react-toastify";
 import {
   START_FETCHING_REQUEST_DEMO,
@@ -20,7 +18,7 @@ export const onStartFetchingRequestDemo = () => {
 export const onFetchingRequestDemo = () => {
   return (dispatch) => {
     dispatch(onStartFetchingRequestDemo());
-    fetch(`${BASE_URL}/request-demo`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/request-demo`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
@@ -45,7 +43,7 @@ export const onStartFetchingRequestDemoCategories = () => {
 export const onFetchingRequestDemoCategories = () => {
   return (dispatch) => {
     dispatch(onStartFetchingRequestDemoCategories());
-    fetch(`${BASE_URL}/categories`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/categories`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);
@@ -94,7 +92,7 @@ export const onSendingRequestDemo = (e, RDForm) => {
   e.preventDefault();
   return (dispatch) => {
     dispatch(onStartSendingRequestDemo());
-    fetch(`${BASE_URL}/request-demos`, {
+    fetch(`https://advanced-velocity-2022.herokuapp.com/request-demos`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

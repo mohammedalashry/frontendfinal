@@ -1,5 +1,3 @@
-import {BASE_URL} from "../../variable";
-
 import {
   START_FETCHING_SMART_CONNECT,
   FINISH_FETCHING_SMART_CONNECT,
@@ -12,7 +10,7 @@ export const onStartFetchingSmartConnect = () => {
 export const onFetchingSmartConnect = () => {
   return (dispatch) => {
     dispatch(onStartFetchingSmartConnect());
-    fetch(`${BASE_URL}/posts/smart-connect`)
+    fetch(`https://advanced-velocity-2022.herokuapp.com/posts/smart-connect`)
       .then((res) => res.json())
       .then((resData) => {
         console.log(resData);

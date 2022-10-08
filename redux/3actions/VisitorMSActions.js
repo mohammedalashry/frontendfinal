@@ -1,5 +1,3 @@
-import {BASE_URL} from "../../variable";
-
 import {
   FINISH_FETCHING_VISITOR_MANAGEMENT_SYSTEM,
   START_FETCHING_VISITOR_MANAGEMENT_SYSTEM,
@@ -13,7 +11,7 @@ export const onFetchingVisitorMS = () => {
   return (dispatch) => {
     dispatch(onStartFetchingVisitorMS());
     fetch(
-      `${BASE_URL}/posts/visitor-management-system`
+      `https://advanced-velocity-2022.herokuapp.com/posts/visitor-management-system`
     )
       .then((res) => res.json())
       .then((resData) => {
