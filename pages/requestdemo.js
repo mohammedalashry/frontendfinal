@@ -378,15 +378,17 @@ export async function getStaticProps() {
     .then((response) => {
       data = response.data;
     });
-  await axios
+  /*
+    await axios
     .get(`${BASE_URL}/request-demos`)
     .then((response) => {
       catogrisTypes = response.data;
     });
+  */
   return {
     props: {
       data,
-      catogrisTypes,
+     // catogrisTypes,
     },
   };
 }
